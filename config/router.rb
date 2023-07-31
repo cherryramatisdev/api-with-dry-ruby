@@ -4,8 +4,8 @@
 require 'sinatra/base'
 require_relative '../app/controllers/index_controller'
 
-# App...
-class App < Sinatra::Base
+# ApplicationRoutes...
+class ApplicationRoutes < Sinatra::Base
   get '/' do
     IndexController.index
   end
