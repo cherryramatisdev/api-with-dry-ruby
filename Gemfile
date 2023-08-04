@@ -22,6 +22,8 @@ gem 'zeitwerk', '~> 2.6'
 
 gem 'dry-auto_inject', '~> 1.0'
 
-gem "pg", "~> 1.5"
+gem 'pg', '~> 1.5'
 
-gem "dotenv", "~> 2.8"
+gem 'dotenv', '~> 2.8'
+
+gem 'rubocop', '~> 1.55', require: false

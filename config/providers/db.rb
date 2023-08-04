@@ -7,7 +7,7 @@ Application.register_provider(:db) do
   end
 
   start do
-    connection = Sequel.connect(ENV['DATABASE_URL'], extensions: %i[pg_timestamptz])
+    connection = Sequel.connect(ENV.fetch('DATABASE_URL', nil), extensions: %i[pg_timestamptz])
     register('db.connection', connection)
     register('db.config', ROM::Configuration.new(:sql, connection))
   end
