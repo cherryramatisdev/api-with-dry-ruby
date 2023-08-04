@@ -2,6 +2,10 @@ GEM
   remote: https://rubygems.org/
   specs:
     concurrent-ruby (1.2.2)
+    dotenv (2.8.1)
+    dry-auto_inject (1.0.1)
+      dry-core (~> 1.0)
+      zeitwerk (~> 2.6)
     dry-configurable (1.1.0)
       dry-core (~> 1.0, < 2)
       zeitwerk (~> 2.6)
@@ -19,6 +23,11 @@ GEM
       dry-types (>= 1.7, < 2)
       ice_nine (~> 0.11)
       zeitwerk (~> 2.6)
+    dry-system (1.0.1)
+      dry-auto_inject (~> 1.0, < 2)
+      dry-configurable (~> 1.0, < 2)
+      dry-core (~> 1.0, < 2)
+      dry-inflector (~> 1.0, < 2)
     dry-types (1.7.1)
       concurrent-ruby (~> 1.0)
       dry-core (~> 1.0)
@@ -29,6 +38,7 @@ GEM
     mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
     nio4r (2.5.9)
+    pg (1.5.3)
     puma (6.3.0)
       nio4r (~> 2.0)
     rack (2.2.8)
@@ -61,29 +71,34 @@ GEM
       rom (~> 5.2, >= 5.2.1)
       sequel (>= 4.49)
     ruby2_keywords (0.0.5)
-    sequel (5.70.0)
+    sequel (5.71.0)
     sinatra (3.0.6)
       mustermann (~> 3.0)
       rack (~> 2.2, >= 2.2.4)
       rack-protection (= 3.0.6)
       tilt (~> 2.0)
-    sqlite3 (1.6.3-arm64-darwin)
     tilt (2.2.0)
     transproc (1.1.1)
     webrick (1.8.1)
-    zeitwerk (2.6.10)
+    yard (0.9.34)
+    zeitwerk (2.6.11)
 
 PLATFORMS
   arm64-darwin-22
 
 DEPENDENCIES
+  dotenv (~> 2.8)
+  dry-auto_inject (~> 1.0)
+  dry-system (~> 1.0)
+  pg (~> 1.5)
   puma (~> 6.3)
   rom (~> 5.3)
   rom-repository (~> 5.3)
   rom-sql (~> 3.6)
   sinatra (~> 3.0)
-  sqlite3 (~> 1.6)
   webrick (~> 1.8)
+  yard (~> 0.9.34)
+  zeitwerk (~> 2.6)
 
 RUBY VERSION
    ruby 3.2.2p53
