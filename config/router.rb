@@ -5,6 +5,6 @@ require 'sinatra/base'
 # ApplicationRoutes...
 class ApplicationRoutes < Sinatra::Base
   get '/' do
-    IndexController.new(nil).index
+    Controllers::User.new.index
   end
 end
