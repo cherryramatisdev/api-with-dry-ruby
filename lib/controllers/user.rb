@@ -1,15 +1,11 @@
 module Controllers
   class User
     def initialize
-      @repo = Application['repos.user']
+      @service = Application['services.user']
     end
 
     def index
-      users = @repo.all
-
-      users.map do |user|
-        { id: user.id, name: user.name, email: user.email }
-      end.to_json
+      @service.list_all
     end
   end
 end
