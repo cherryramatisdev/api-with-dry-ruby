@@ -27,3 +27,5 @@ gem 'pg', '~> 1.5'
 gem 'dotenv', '~> 2.8'
 
 gem 'rubocop', '~> 1.55', require: false
+
+gem "rake", "~> 13.1"

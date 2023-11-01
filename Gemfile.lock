@@ -53,6 +53,7 @@ GEM
     rack-protection (3.0.6)
       rack
     rainbow (3.1.1)
+    rake (13.1.0)
     regexp_parser (2.8.1)
     rexml (3.2.6)
     rom (5.3.0)
@@ -118,6 +119,7 @@ DEPENDENCIES
   dry-system (~> 1.0)
   pg (~> 1.5)
   puma (~> 6.3)
+  rake (~> 13.1)
   rom (~> 5.3)
   rom-repository (~> 5.3)
   rom-sql (~> 3.6)
